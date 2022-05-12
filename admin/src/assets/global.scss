@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+  #app {
+  }
+}
+
+.ant-pagination-item-link {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+[role="alert"] {
+  font-size: 12px !important;
+}
+
+.upload-image {
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.message {
+  @apply hover:text-blue-600 duration-300 cursor-pointer;
+}
+
+// avatar
+.photo {
+  @apply w-full h-full bg-violet-600 flex justify-center items-center text-white;
+}
+
+.avatar {
+  @apply max-w-[40px] h-[40px] rounded-full overflow-hidden border-2 border-gray-200 m-auto;
+  &.lg {
+    @apply max-w-[80px] h-[80px];
+  }
+}
+
+// menu
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+
+  .ant-menu {
+    flex: 1;
+  }
+}
+
+// loading
+.ant-spin-nested-loading > div > .ant-spin {
+  min-height: 100%;
+}
+
+.ant-radio-button-wrapper-checked {
+  span {
+    color: white !important;
+  }
+}
+
+// tag
+//.cate-tag {
+//  display: flex !important;
+//  align-items: center;
+//}
+
+// message
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+}
+
+// color picker
+.color-picker {
+  width: 250px !important;
+  top: 0 !important;
+}
+
+// img
+.photo {
+  @apply max-w-[150px] rounded-sm m-2 overflow-hidden border-4 border-gray-300 cursor-pointer hover:shadow-md hover:-translate-y-1 duration-300;
+  img {
+    @apply object-cover;
+  }
+
+  &.active {
+    @apply border-violet-700;
+  }
+}
+
+// table fix
+.ant-table-cell-fix-left {
+  z-index: 999 !important;
+}
+
+// comment
+.ant-comment-actions {
+  margin-top: 0 !important;
+
+  li {
+    @apply w-full;
+  }
+}
+
+// icon
+.ant-statistic-content-suffix {
+  display: flex !important;
+  align-items: center;
+}
+
+// card
+.card {
+  @apply box-border shadow-sm duration-300 hover:shadow-md bg-white p-4;
+}
+
+// echarts
+canvas {
+  width: 100% !important;
+}
+
+#echarts1 {
+  div {
+    width: 100% !important;
+  }
+}

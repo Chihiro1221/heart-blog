@@ -1,0 +1,186 @@
+:root {
+  --primary-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
+
+body {
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Helvetica Neue',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial !important;
+}
+
+.home {
+  @apply bg-gray-100 overflow-x-hidden min-h-screen;
+}
+
+// 原点
+.circle {
+  @apply w-[3px] h-[3px] bg-gray-600 rounded-full mx-2;
+}
+
+// 竖
+.stick {
+  @apply mx-2 h-[14px] w-[1px] bg-gray-200;
+}
+
+.active {
+  @apply text-violet-500;
+}
+
+// el card
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.item {
+  margin-bottom: 18px;
+}
+
+.main-container {
+  @apply p-4 w-[1200px] grid md:grid-cols-4 gap-4;
+}
+
+// err message
+.error-message {
+  @apply text-sm text-red-600;
+}
+
+// disabled
+.disabled {
+  @apply bg-gray-500 hover:bg-gray-500 duration-300 cursor-not-allowed;
+}
+
+// markdown preview
+.vuepress-markdown-body:not(.custom) {
+  @apply p-0;
+}
+
+// avatar
+.avatar {
+  @apply w-[40px] h-[40px] rounded-full;
+}
+
+// my card
+.i-card {
+  @apply bg-white mt-4 pb-4 shadow-sm border rounded-sm;
+  .header {
+    @apply flex items-center gap-2 border-b py-4 px-4;
+    h2 {
+      @apply font-medium;
+    }
+  }
+
+  .content {
+    @apply p-4;
+  }
+}
+
+// ellipsis
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// textarea
+.el-textarea {
+  textarea {
+    resize: none;
+  }
+}
+
+// tab
+.el-tabs__item.is-active {
+  color: $primary-color !important;
+}
+
+.el-tabs__item:hover:hover {
+  color: $primary-color !important;
+}
+
+.el-tabs__active-bar {
+  background-color: $primary-color !important;
+}
+
+// primary button
+//  .el-button--primary {
+//   background-color: $primary-color !important;
+//   background: $primary-color !important;
+//   border-color: $primary-color !important;
+// }
+
+// .el-button--primary:hover {
+//   background-color: $primary-color-shallow !important;
+// }
+
+// el-button
+.el-message {
+  min-width: auto !important;
+}
+
+// upload
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--el-transition-duration-fast);
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: var(--el-color-primary);
+}
+
+.el-icon.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.cover-uploader .el-icon.avatar-uploader-icon {
+  width: 300px;
+  height: 200px;
+}
+
+// select
+.example-showcase .el-dropdown-link {
+  cursor: pointer;
+  color: var(--el-color-primary);
+  display: flex;
+  align-items: center;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  #nprogress .bar {
+    background: rgb(139 92 246) !important; //自定义颜色
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #nprogress .bar {
+    background: #a29bfe !important; //自定义颜色
+  }
+}
+
+.home .my-dialog {
+  @apply w-full md:w-[70%];
+}
+
+.avatar-card {
+  div {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}

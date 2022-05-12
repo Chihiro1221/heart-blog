@@ -1,0 +1,8 @@
+export default () => {
+  return {
+    SERVER_PORT: 3011,
+    ADMIN_PORT: 3012,
+    DB_URI: 'mongodb://localhost:27017/blog',
+    JWT_SCRET: 'adifjdkfksadjklfjkdsal',
+  };
+};
