@@ -163,8 +163,6 @@ yarn build
 ### 联系
 
 - QQ：2213595911
-- 个人网站
-  - https://langya11.icu
-  - https://chihiross.com
+- 博客地址：https://chihiross.com
 
 如果有前端开发过程中的问题欢迎联系我提问👏🏻，也希望能有一些志同道合的朋友们，可以一起在程序员开发的生涯中共同成长，共同进步。
